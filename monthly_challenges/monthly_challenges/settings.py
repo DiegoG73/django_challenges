@@ -58,6 +58,7 @@ TEMPLATES = [
         'DIRS': [
             # Here we can add templates/paths that should be considered by Django
             # BASE_DIR /  "challenges" / "templates"
+            BASE_DIR / "templates"
         ],
         'APP_DIRS': True,
         'OPTIONS': {

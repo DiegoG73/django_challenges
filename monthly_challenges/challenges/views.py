@@ -16,7 +16,8 @@ monthly_challenges = {
     "September": "Drink 20 litters of water every day, huh? 🤔",
     "October":   "Make 26 hours of excersie every day!",
     "November":  "Recover every calorie of the last month eating a lot of lasagne",
-    "December":  "Say goodbye to this year lil bro..."
+    #"Say goodbye to this year lil bro..."
+    "December":  None
 }
 
 #* Creating dynamic paths:
