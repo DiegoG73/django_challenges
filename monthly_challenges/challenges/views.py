@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.http import  HttpResponseNotFound, HttpResponseRedirect, Http404
 from django.urls import reverse
-
 
 #! Creating the viariable which let me make more dynamic the creation of months in monthly_challenges function
 monthly_challenges = {
@@ -53,4 +52,4 @@ def monthly_challenge(request, month):
             "month_name": month.capitalize()
         })
     except:
-        return HttpResponseNotFound("<h1> This month is not supported </h1>")
+        raise Http404()
